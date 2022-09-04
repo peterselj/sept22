@@ -1,0 +1,287 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body{
+	font-size:16px;
+	background-image: url('escheresque_ste.png');
+	padding-bottom:30px;
+	margin-bottom:30px;
+	line-height:22px;
+	background-attachment:fixed;
+}
+
+.printerPaper{
+	display:none;
+	font-family:'Vollkorn', "Palatino Linotype", Arial, sans-serif;
+
+}
+
+@media print{
+	.noPrint{
+		display:none;
+	}
+
+	.printerPaper{
+		display:inline;
+	}
+	.pagebreak{
+		page-break-after: always;
+	}
+}
+
+.stickynote{
+	color:white;
+	text-align: right;
+	position:fixed;
+	margin:25px 30px 20px 30px;
+	font-family:'Vollkorn', "Palatino Linotype", Arial, sans-serif;
+	width:170px;
+	min-width:170px;
+	font-size: 12px;
+	line-height:22px;
+	z-index:1;
+
+}
+
+
+.stickynote a{color:white;}
+.stickynote a:link {text-decoration:none;}
+.stickynote a:visited {text-decoration:none;}
+.stickynote a:hover {text-decoration:underline;}
+.stickynote a:active {text-decoration:none;}
+.printer{cursor:pointer;}
+.printer:hover{text-decoration:underline;}
+
+
+.paper{
+	padding-top:20px;
+	padding-left: 80px;
+	padding-right:80px;
+	padding-bottom: 20px;
+	background-image: url('p6.png');
+	font-family: 'Vollkorn', "Palatino Linotype", Arial, sans-serif;
+	left:0%;
+	margin-left: 240px; /*16.75%; */
+	margin-top:30px;
+	margin-bottom:50px;
+	width:66.5%;
+	min-width:680.96px; /* 1060 - 848 - 678.4 */
+	max-width:1280px;
+	line-height:22px;
+	position:relative;
+	z-index:2;
+}
+/*.paper2{
+	width:66.5%;
+	max-width:1280px;
+}*/
+
+.paper .y2k{
+		color:#DEB841;
+}
+
+strong{
+	line-height:0px;
+}
+
+
+
+.paper a.invite{color:#DEB841;}
+.paper a{color:#7CC576;}
+.paper a:link {text-decoration:underline;}
+.paper a:visited {text-decoration:underline;}
+.paper a:hover {text-decoration: bold;}
+.paper a:active {text-decoration:underline;}
+
+
+.title{
+	font-size:3em;
+	padding-top:30px;
+	padding-left:-10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	line-height: 1em;
+}
+
+.paper img{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.logo{
+	margin-left:75px;
+}
+
+.qContainer{
+	margin-left:30px;
+	margin-right:30px;
+}
+
+.q2Left,
+.q2Right {
+	width:45%;
+	text-align:justify;
+	line-height:22px;
+}
+
+.q2Left{
+	float:left;
+}
+
+.q2Right{
+	float:right;
+}
+
+.q2LeftPrint{
+	font-size:.8em;
+	width:45%;
+	text-align:justify;
+	line-height:22px;
+	float:left;
+}
+
+.q2RightPrint{
+	font-size: .8em;
+	float:right;
+	width:45%;
+	text-align:justify;
+	line-height:22px;
+}
+
+.reference{
+	margin:auto;
+	text-align:center;
+}
+
+.project{
+	margin-left:30px;
+	margin-right:30px;
+	padding:4%;
+	text-align:justify;
+	background-image: url('p6_dark.png');
+}
+
+.projectThumb{
+	padding:4%;
+	text-align:justify;
+	background-image: url('p6_dark.png');
+}
+
+.project .leftImage{
+	margin-right:4.25%;
+
+}
+.project .middleImage{
+	margin-right:4.25%;
+}
+
+.project .rightImage{
+
+}
+
+.projectThumb .leftImage{
+	margin-right:4.25%;
+
+}
+.projectThumb .middleImage{
+	margin-right:4.25%;
+}
+
+.projectThumb .rightImage{
+
+}
+
+.dark{
+	background-image: url('p6_dark.png');	
+}
+
+ol{
+	text-align:justify;
+	/*font-size: .8em;*/
+	line-height:22px;
+}
+
+
+li{
+	margin-left:-0px;
+	margin-right:2.5em;
+}
+
+ol .leftImage{
+	margin-right:4.25%;
+}
+
+ol .middleImage{
+	margin-right:4.25%;
+}
+
+.signature{
+	font-size: 1.25em;
+	text-align:right;
+	padding-right: 0px;
+}
+
+.wb2Left{
+	width:44%;
+	margin-left:4%;
+	line-height:22px;
+	float:left;
+}
+
+.wb2Right{
+	width:44%;
+	margin-right:4%;
+	margin-left:4%;
+	line-height:22px;
+	float:right;
+}
+
+.wb2LeftPrint{
+	width:40%;
+	margin-left:30px;
+	line-height:22px;
+	float:left;
+}
+
+.wb2RightPrint{
+	width:45%;
+	margin-right:30px;
+	line-height:22px;
+	float:right;
+}
+
+h2{
+	clear:both;
+}
+
+.toTop{
+	color:gray;
+}
+
+.toTop:hover {
+	cursor:pointer;
+}
+
+@media (max-width:480px){
+
+	.stickynote {
+		display: none;
+	}
+
+	.paper {
+		margin: 0;
+		max-width: 10000px;
+		min-width: 0;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.q2Left,
+	.q2Right,
+	.wb2Left,
+	.wb2Right {
+		float: none;
+		width: auto;
+	}
+}
